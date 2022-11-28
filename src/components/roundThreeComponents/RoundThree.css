@@ -1,0 +1,123 @@
+/*The CSS for each rounds card layout is different because each Round has a different amount of cards, other then that they are more or less the same.*/
+/*CSS for Three One*/
+.RoundThreePage{
+  height: 110vh;
+  width: 100%;
+  background-image: url(../images/Screen-Wallpapers-Pikachu-Ball.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*For positioning the UI*/
+.uiDiv{
+  margin-top: 5%;
+  margin-left: 6%;
+}
+
+.helpButton{
+  margin-left: 36%;
+}
+
+.RoundThreeTable{
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+/*For showing the text when you win*/
+.showWinBox{
+  display: block;
+  color: white;
+  border: 3px solid white;
+  border-radius: 4px;
+  margin-top: 18%;
+}
+
+.hideWinBox{
+  display: none;
+  color: white;
+  border: 2px solid white;
+}
+
+.nextRoundButton{
+  margin-left: 38%;
+}
+
+/*For showing the text when you lose*/
+.showLoseBox{
+  display: block;
+  color: white;
+  border: 3px solid white;
+  border-radius: 4px;
+  height: 52px;
+  width: 650px;
+  margin-left: 9%;
+  text-align: center;
+}
+
+.hideLoseBox{
+  display: none;
+  color: white;
+  border: 3px solid white;
+  border-radius: 4px;
+  height: 52px;
+  width: 650px;
+  margin-left: 9%;
+  text-align: center;
+}
+
+/*For displaing the cards in a grid form*/
+.card-display{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+  }
+
+.cardBox{
+    position: relative;
+  }
+  
+  /*For the card images*/
+  .cardBox img{
+    width: 98%;
+    display: block;
+    border: 3px solid black;
+    border-radius: 15px;
+  }
+
+  /*For flipping the cards around*/
+  .cardBox .cardFront{
+    transform: rotateX(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+  }
+  
+  .turnover .cardFront{
+    transform: rotateX(0deg);
+    transition-delay: 0.2s;
+  }
+
+  .cardBox .cardBack{
+    transition: all ease-out 0.3s;
+    transition-delay: 0.2s;
+  }
+
+  .turnover .cardBack{
+    transform: rotateX(90deg);
+    transition-delay: 0s;
+  }
+
+  
+  /*For showing the next round button*/
+  .showNextButton{
+    display: block;
+  }
+
+  .hideNextButton{
+    display: none;
+  }
+
+  /*For hiding thee game cards*/
+  .hideGameDiv{
+    display: none;
+  }

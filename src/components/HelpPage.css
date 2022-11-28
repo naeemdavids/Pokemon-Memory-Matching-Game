@@ -1,0 +1,9 @@
+/*CSS for the Help Page*/
+
+.HelpPage{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/HelpPage.jpg);
+    background-size: cover;
+    background-position: center;
+}

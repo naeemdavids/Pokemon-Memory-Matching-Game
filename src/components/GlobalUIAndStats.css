@@ -1,0 +1,27 @@
+/*CSS for the UI and Stat panel*/
+
+.RoundUIBox{
+    text-align: center;
+    color: white;
+    margin-top: 7%;
+    margin-left: 5%;
+  }
+  
+.RoundStats{
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+    margin-left: 5%;
+    border: 5px solid white;
+    border-radius: 10px;
+    height: 245px;
+    width: 150px;
+}
+
+.newResetButtons{
+    margin-left: 14%;
+}
+
+.nextRoundUi{
+    margin-left: 0%;
+}

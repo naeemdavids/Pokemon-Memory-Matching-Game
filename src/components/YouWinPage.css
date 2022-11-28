@@ -1,0 +1,19 @@
+/*CSS for the YouWinPage*/
+
+.YouWinPage{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/Screen-Wallpapers-Pikachu-Ball.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.textDiv{
+    padding-left: 10%;
+    padding-top: 15%;
+    color: white;
+}
+
+.youWinPageNewGame{
+    margin-left: 10%;
+}

@@ -2,16 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import RoundOne from './components/RoundOne';
+import RoundTwo from './components/RoundTwo';
+import RoundThree from './components/RoundThree';
+import YouWinPage from './components/YouWinPage';
+import HelpPage from './components/HelpPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; //For bootstrap.css
 
+
+//React-Router-Dom is used to navigate to the diffrent pages rather then props. 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Router>
+    <Routes>
+      <Route path='/' element={<App/>}/>
+      <Route path='/RoundOne' element={<RoundOne/>}/>
+      <Route path='/RoundTwo' element={<RoundTwo/>}/>
+      <Route path='/RoundThree' element={<RoundThree/>}/>
+      <Route path='/YouWinPage' element={<YouWinPage/>}/>
+      <Route path='/HelpPage' element={<HelpPage/>}/>
+    </Routes>
+  </Router>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
